@@ -49,7 +49,7 @@ also found in ``helloworld.py``
   if __name__ == '__main__':
       main()
 
-Note that python-trezor doesn't care about exclusivity; if two applications try to connect to the same device at the same time, both will get nonsensical messages and fail.
+Note that python-trezor doesn't care about exclusivity if used with `HidTransport`; if two applications try to connect to the same device at the same time, both will get nonsensical messages and fail. For this reason, it's better to use `BridgeTransport` - however, for that, you need to install `Trezor Bridge <https://github.com/trezor/trezord>`_.
 
 PIN Entering
 ------------
