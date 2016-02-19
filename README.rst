@@ -49,6 +49,8 @@ also found in ``helloworld.py``
   if __name__ == '__main__':
       main()
 
+Note that python-trezor doesn't care about exclusivity; if two applications try to connect to the same device at the same time, both will get nonsensical messages and fail.
+
 PIN Entering
 ------------
 
